@@ -1,0 +1,22 @@
+PODS:
+  - dropdown (0.0.1):
+    - Flutter
+  - Flutter (1.0.0)
+
+DEPENDENCIES:
+  - dropdown (from `.symlinks/plugins/dropdown/ios`)
+  - Flutter (from `Flutter`)
+
+EXTERNAL SOURCES:
+  dropdown:
+    :path: ".symlinks/plugins/dropdown/ios"
+  Flutter:
+    :path: Flutter
+
+SPEC CHECKSUMS:
+  dropdown: e4ab7556b8f550b68d8602451fe83c902d60f9d8
+  Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
+
+PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
+
+COCOAPODS: 1.11.2
