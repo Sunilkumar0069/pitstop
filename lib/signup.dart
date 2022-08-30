@@ -8,7 +8,7 @@ import 'home.dart';
 class signup extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.black,
       appBar: AppBar(
         backgroundColor: Color(0xF80684AE),
         title: Text(
@@ -58,6 +58,9 @@ class signup extends StatelessWidget {
                 ),
                 TextField(
                   decoration: InputDecoration(
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(14),
+                      ),
                     labelText: " Name:",
                     labelStyle: TextStyle(
                         fontSize: 15,
@@ -71,6 +74,9 @@ class signup extends StatelessWidget {
                 ),
                 TextField(
                   decoration: InputDecoration(
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(14),
+                      ),
                     labelText: " Phone: ",
                     labelStyle: TextStyle(
                         fontSize: 15,
@@ -84,6 +90,9 @@ class signup extends StatelessWidget {
                 ),
                 TextField(
                   decoration: InputDecoration(
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(14),
+                      ),
                     labelText: " Email Id:",
                     labelStyle: TextStyle(
                         fontSize: 15,
@@ -98,6 +107,9 @@ class signup extends StatelessWidget {
                 TextField(
                   obscureText: true,
                   decoration: InputDecoration(
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(14),
+                      ),
                     labelText: " Password:",
                     labelStyle: TextStyle(
                         fontSize: 15,
@@ -111,6 +123,9 @@ class signup extends StatelessWidget {
                 ),
                 TextField(
                   decoration: InputDecoration(
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(14),
+                      ),
                     labelText: " Address:",
                     labelStyle: TextStyle(
                         fontSize: 15,
@@ -122,30 +137,29 @@ class signup extends StatelessWidget {
                 SizedBox(
                   height: 20.0,
                 ),
-                Column(
-                  children: [
-                    ButtonTheme(
-                        height: 50,
-                        disabledColor: Colors.black12,
-                        child: FlatButton(
-                            child: Text(
-                              'SignUp',
-                              style: TextStyle(
-                                fontSize: 20,
-                                fontWeight: FontWeight.w700,
-                                color: Colors.white,
-                              ),
+                Column(children: [
+                  ButtonTheme(
+                      height: 30,
+                      disabledColor: Colors.black12,
+                      child: RaisedButton(
+                          color: Colors.black,
+                          child: Text(
+                            'Signup',
+                            style: TextStyle(
+                              fontSize: 15,
+                              fontWeight: FontWeight.w700,
+                              color: Colors.white,
                             ),
-                            onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => login(),
-                                ),
-                              );
-                            }))
-                  ],
-                )
+                          ),
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => login(),
+                              ),
+                            );
+                          })),
+                ]),
               ]),
         ),
       ));

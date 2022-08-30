@@ -5,6 +5,7 @@ import 'home.dart';
 import 'services.dart';
 import 'fixit.dart';
 import 'help.dart';
+import 'about.dart';
 
 class dashboard extends StatelessWidget {
   @override
@@ -143,7 +144,25 @@ class dashboard extends StatelessWidget {
           },
         ),
         ListTile(
-          leading: Icon(Icons.logout_outlined),
+          leading: Icon(Icons.info),
+          title: Text(
+            'About',
+            style: TextStyle(
+              color: Colors.black,
+              fontSize: 15,
+              fontWeight: FontWeight.w700,
+            ),
+          ),
+          onTap: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => about(),
+                ));
+          },
+        ),
+        ListTile(
+          leading: Icon(Icons.logout),
           title: Text(
             'LogOut',
             style: TextStyle(

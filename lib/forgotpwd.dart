@@ -6,7 +6,7 @@ import 'signup.dart';
 class forgotpwd extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.black,
       appBar: AppBar(
         backgroundColor: Color(0xF80684AE),
         title: Text(
@@ -56,6 +56,9 @@ class forgotpwd extends StatelessWidget {
                 ),
                 TextField(
                   decoration: InputDecoration(
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(14),
+                    ),
                     labelText: " Email Id:",
                     labelStyle: TextStyle(
                         fontSize: 20,
@@ -65,27 +68,31 @@ class forgotpwd extends StatelessWidget {
                   ),
                 ),
                 SizedBox(
-                  height: 0.0,
+                  height: 20.0,
                 ),
-                ButtonTheme(
-                    height: 0,
-                    disabledColor: Colors.black12,
-                    child: FlatButton(
-                        child: Text(
-                          '\n\nSet Password',
-                          style: TextStyle(
-                              fontSize: 20,
+                Column(children: [
+                  ButtonTheme(
+                      height: 30,
+                      disabledColor: Colors.black12,
+                      child: RaisedButton(
+                          color: Colors.black,
+                          child: Text(
+                            'Set password',
+                            style: TextStyle(
+                              fontSize: 15,
                               fontWeight: FontWeight.w700,
-                              color: Colors.white),
-                        ),
-                        onPressed: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => login(),
+                              color: Colors.white,
                             ),
-                          );
-                        })),
+                          ),
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => login(),
+                              ),
+                            );
+                          })),
+                ]),
               ],
             )),
       ));

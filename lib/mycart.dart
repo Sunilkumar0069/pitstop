@@ -51,14 +51,14 @@ class mycart extends StatelessWidget {
                     ),
                     Column(children: [
                       ButtonTheme(
-                          height: 0,
+                          height: 30,
                           disabledColor: Colors.black12,
                           child: RaisedButton(
                               color: Colors.black,
                               child: Text(
                                 'Fix Appointment',
                                 style: TextStyle(
-                                  fontSize: 20,
+                                  fontSize: 15,
                                   fontWeight: FontWeight.w700,
                                   color: Colors.white,
                                 ),

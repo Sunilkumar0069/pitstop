@@ -7,7 +7,7 @@ import 'forgotpwd.dart';
 class login extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.black,
         appBar: AppBar(
           backgroundColor: Color(0xF80684AE),
           title: Text(
@@ -57,6 +57,9 @@ class login extends StatelessWidget {
                   ),
                   TextField(
                     decoration: InputDecoration(
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(14),
+                      ),
                       labelText: " Email Id:",
                       labelStyle: TextStyle(
                           fontSize: 20,
@@ -71,6 +74,9 @@ class login extends StatelessWidget {
                   TextField(
                     obscureText: true,
                     decoration: InputDecoration(
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(14),
+                      ),
                       labelText: " Password: ",
                       labelStyle: TextStyle(
                           fontSize: 20,

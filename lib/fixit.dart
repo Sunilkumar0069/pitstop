@@ -58,6 +58,9 @@ class fixit extends StatelessWidget {
               ),
               TextField(
                 decoration: InputDecoration(
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(14),
+                  ),
                   labelText: " Phone No: ",
                   labelStyle: TextStyle(
                       fontSize: 15,
