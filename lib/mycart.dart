@@ -87,7 +87,7 @@ class mycart extends StatelessWidget {
                           if (carnum != "")
                             Text(
                               "Car Number: $carnum",
-                              textAlign: TextAlign.left,
+                              textAlign: TextAlign.justify,
                               style: TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.w700,
@@ -96,7 +96,8 @@ class mycart extends StatelessWidget {
                             ),
                           if (carcompanyname != "")
                             Text(
-                              "Company Name: $carcompanyname",
+                              "\nCompany Name: $carcompanyname",
+                              textAlign: TextAlign.justify,
                               style: TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.w700,
@@ -105,7 +106,8 @@ class mycart extends StatelessWidget {
                             ),
                           if (carmodelname != "")
                             Text(
-                              "Model Name: $carmodelname",
+                              "\nModel Name: $carmodelname",
+                              textAlign: TextAlign.justify,
                               style: TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.w700,
@@ -114,7 +116,8 @@ class mycart extends StatelessWidget {
                             ),
                           if (c_appointmentdate != "")
                             Text(
-                              "Appointment Date: $c_appointmentdate",
+                              "\nAppointment Date: $c_appointmentdate",
+                              textAlign: TextAlign.justify,
                               style: TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.w700,
@@ -123,7 +126,8 @@ class mycart extends StatelessWidget {
                             ),
                           if (c_wash_service != "")
                             Text(
-                              "Wash Service: $c_wash_service",
+                              "\nWash Service: $c_wash_service",
+                              textAlign: TextAlign.justify,
                               style: TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.w700,
@@ -132,7 +136,8 @@ class mycart extends StatelessWidget {
                             ),
                           if (ac_service != "")
                             Text(
-                              "AC Service: $ac_service",
+                              "\nAC Service: $ac_service",
+                              textAlign: TextAlign.justify,
                               style: TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.w700,
@@ -141,7 +146,8 @@ class mycart extends StatelessWidget {
                             ),
                           if (paint_service != "")
                             Text(
-                              "Paint Service: $paint_service",
+                              "\nPaint Service: $paint_service",
+                              textAlign: TextAlign.justify,
                               style: TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.w700,
@@ -150,7 +156,8 @@ class mycart extends StatelessWidget {
                             ),
                           if (c_other_service != "")
                             Text(
-                              "Other Service: $c_other_service",
+                              "\nOther Service: $c_other_service",
+                              textAlign: TextAlign.justify,
                               style: TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.w700,
@@ -159,7 +166,8 @@ class mycart extends StatelessWidget {
                             ),
                           if (bikenum != "")
                             Text(
-                              "Bike Number: $bikenum",
+                              "\nBike Number: $bikenum",
+                              textAlign: TextAlign.justify,
                               style: TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.w700,
@@ -168,7 +176,8 @@ class mycart extends StatelessWidget {
                             ),
                           if (bikecompanyname != "")
                             Text(
-                              "Company Name: $bikecompanyname",
+                              "\nCompany Name: $bikecompanyname",
+                              textAlign: TextAlign.justify,
                               style: TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.w700,
@@ -177,7 +186,8 @@ class mycart extends StatelessWidget {
                             ),
                           if (bikemodelname != "")
                             Text(
-                              "Model Name: $bikemodelname",
+                              "\nModel Name: $bikemodelname",
+                              textAlign: TextAlign.justify,
                               style: TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.w700,
@@ -186,7 +196,8 @@ class mycart extends StatelessWidget {
                             ),
                           if (b_appointmentdate != "")
                             Text(
-                              "Appointment Date: $b_appointmentdate",
+                              "\nAppointment Date: $b_appointmentdate",
+                              textAlign: TextAlign.justify,
                               style: TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.w700,
@@ -195,7 +206,8 @@ class mycart extends StatelessWidget {
                             ),
                           if (b_wash_service != "")
                             Text(
-                              "Wash Service: $b_wash_service",
+                              "\nWash Service: $b_wash_service",
+                              textAlign: TextAlign.justify,
                               style: TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.w700,
@@ -204,7 +216,8 @@ class mycart extends StatelessWidget {
                             ),
                           if (oil_service != "")
                             Text(
-                              "Oil Service: $oil_service",
+                              "\nOil Service: $oil_service",
+                              textAlign: TextAlign.justify,
                               style: TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.w700,
@@ -213,7 +226,8 @@ class mycart extends StatelessWidget {
                             ),
                           if (b_paint != "")
                             Text(
-                              "Paint Service: $b_paint",
+                              "\nPaint Service: $b_paint",
+                              textAlign: TextAlign.justify,
                               style: TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.w700,
@@ -222,7 +236,8 @@ class mycart extends StatelessWidget {
                             ),
                           if (b_other_service != "")
                             Text(
-                              "Other Service: $b_other_service",
+                              "\nOther Service: $b_other_service",
+                              textAlign: TextAlign.justify,
                               style: TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.w700,
