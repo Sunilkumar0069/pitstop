@@ -40,6 +40,8 @@ dependencies:
   webviewx: ^0.2.1
   webview_flutter: ^2.8.0
   intl: ^0.17.0
+  overlay_support: ^2.0.1
+  internet_connection_checker: ^0.0.1+4
 
 dev_dependencies:
   flutter_test:

@@ -36,14 +36,22 @@ class _car_serviceState extends State<car_service> {
   String? _selectedAc;
   String? _selectedPaint;
   String? _selectedOther;
-  TextEditingController? _dobController;
+  TextEditingController? _cardateController;
+  TextEditingController? _compname;
+  TextEditingController? _carnum;
+  TextEditingController? _modname;
   DateTime? _date;
 
   //init
   @override
   void initState() {
     super.initState();
-    _dobController = TextEditingController();
+    _cardateController = TextEditingController();
+    _compname = TextEditingController();
+    _carnum = TextEditingController();
+    _modname = TextEditingController();
+    _selectedAc;
+    _selectedPaint;
   }
 
   void _selectDob() async {
@@ -60,7 +68,7 @@ class _car_serviceState extends State<car_service> {
     if (pickedDate != null && pickedDate != _date) {
       setState(() {
         _date = pickedDate;
-        _dobController?.text = DateFormat('MMM d, yyyy').format(_date!);
+        _cardateController?.text = DateFormat('MMM d, yyyy').format(_date!);
         print("date $_date");
         // _patientAgeController.text =
         //     (DateTime.now().year - pickedDate.year).toString();
@@ -91,6 +99,7 @@ class _car_serviceState extends State<car_service> {
               height: 20.0,
             ),
             TextField(
+              controller: _carnum,
               decoration: InputDecoration(
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(14),
@@ -115,6 +124,7 @@ class _car_serviceState extends State<car_service> {
               height: 10.0,
             ),
             TextField(
+              controller: _compname,
               decoration: InputDecoration(
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(14),
@@ -140,6 +150,7 @@ class _car_serviceState extends State<car_service> {
               height: 10.0,
             ),
             TextField(
+              controller: _modname,
               decoration: InputDecoration(
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(14),
@@ -160,7 +171,7 @@ class _car_serviceState extends State<car_service> {
               onTap: _selectDob,
               child: IgnorePointer(
                 child: TextFormField(
-                  controller: _dobController,
+                  controller: _cardateController,
                   obscureText: false,
                   decoration: InputDecoration(
                     border: OutlineInputBorder(
@@ -218,6 +229,7 @@ class _car_serviceState extends State<car_service> {
                         borderRadius: BorderRadius.circular(0)),
                     child: DropdownButton<String>(
                       // value: null,
+
                       value: _selectedwash,
                       onChanged: (value) {
                         setState(() {
@@ -512,7 +524,24 @@ class _car_serviceState extends State<car_service> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => mycart(),
+                            builder: (context) => mycart(
+                              carnum: _carnum!.text,
+                              carcompanyname: _compname!.text,
+                              carmodelname: _modname!.text,
+                              c_appointmentdate: _cardateController!.text,
+                              c_wash_service: _selectedwash!,
+                              ac_service: _selectedAc!,
+                              paint_service: _selectedPaint!,
+                              c_other_service: _selectedOther!,
+                              bikenum: "",
+                              bikecompanyname: "",
+                              bikemodelname: "",
+                              b_appointmentdate: "",
+                              b_wash_service: "",
+                              oil_service: "",
+                              b_paint: "",
+                              b_other_service: "",
+                            ),
                           ),
                         );
                       })),

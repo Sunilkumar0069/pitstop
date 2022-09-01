@@ -14,10 +14,10 @@ class help extends StatelessWidget {
       ),
       body: Center(
           child: Container(
-              height: 300,
+              height: 500,
               width: 400,
               decoration: BoxDecoration(
-                color: Color(0xF80684AE),
+                color: Colors.white,
                 boxShadow: [
                   BoxShadow(),
                 ],
@@ -26,12 +26,19 @@ class help extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Center(
+                      child: Image.asset(
+                        'assets/logo6.png',
+                        width: 400,
+                        height: 200,
+                      ),
+                    ),
+                    Center(
                       child: Text(
-                        '\n\nBuild Version: 1.0.1\n\nBuild Date: 27-07-2022',
+                        'Build Version: 2.0.7\n\nBuild Date: 01-09-2022\n\nEmail:pitstop@gmail.com',
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.w500,
-                          color: Colors.white,
+                          color: Color(0xF80684AE),
                         ),
                       ),
                     ),
@@ -42,7 +49,7 @@ class help extends StatelessWidget {
                       children: [
                         Center(
                           child: RaisedButton(
-                            color: Colors.black,
+                            color: Color(0xF80684AE),
                             child: Text(
                               'Home',
                               style: TextStyle(

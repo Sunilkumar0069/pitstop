@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "895948008128",
+    "project_id": "pitstop-8737b",
+    "storage_bucket": "pitstop-8737b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:895948008128:android:60c3fcb2ef63e26e6b9b25",
+        "android_client_info": {
+          "package_name": "com.PitStop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "895948008128-kl8t5nskm1a72k47cl7u217kfu719o8p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbezsAnNj93GRABt0RPZ3LoVfyB_i4Gp0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "895948008128-kl8t5nskm1a72k47cl7u217kfu719o8p.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "895948008128-cmpf5u78kh8vi9530pseatniq1766b3s.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.PitStop"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

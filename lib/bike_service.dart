@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:loginpage/login.dart';
 import 'services.dart';
 import 'mycart.dart';
 import 'package:intl/intl.dart';
@@ -33,17 +34,23 @@ class _bike_serviceState extends State<bike_service> {
 
   @override
   String? _selectedwash;
-  String? _selectedAc;
+  String? _selectedoil;
   String? _selectedPaint;
   String? _selectedOther;
-  TextEditingController? _dobController;
+  TextEditingController? _bikedateController;
+  TextEditingController? _bikenum;
+  TextEditingController? _bikecompname;
+  TextEditingController? _bikemodname;
   DateTime? _date;
 
   //init
   @override
   void initState() {
     super.initState();
-    _dobController = TextEditingController();
+    _bikedateController = TextEditingController();
+    _bikenum = TextEditingController();
+    _bikecompname = TextEditingController();
+    _bikemodname = TextEditingController();
   }
 
   void _selectDob() async {
@@ -60,7 +67,7 @@ class _bike_serviceState extends State<bike_service> {
     if (pickedDate != null && pickedDate != _date) {
       setState(() {
         _date = pickedDate;
-        _dobController?.text = DateFormat('MMM d, yyyy').format(_date!);
+        _bikedateController?.text = DateFormat('MMM d, yyyy').format(_date!);
         print("date $_date");
         // _patientAgeController.text =
         //     (DateTime.now().year - pickedDate.year).toString();
@@ -91,6 +98,7 @@ class _bike_serviceState extends State<bike_service> {
               height: 20.0,
             ),
             TextField(
+              controller: _bikenum,
               decoration: InputDecoration(
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(14),
@@ -115,6 +123,7 @@ class _bike_serviceState extends State<bike_service> {
               height: 10.0,
             ),
             TextField(
+              controller: _bikecompname,
               decoration: InputDecoration(
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(14),
@@ -139,6 +148,7 @@ class _bike_serviceState extends State<bike_service> {
               height: 10.0,
             ),
             TextField(
+              controller: _bikemodname,
               decoration: InputDecoration(
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(14),
@@ -159,7 +169,7 @@ class _bike_serviceState extends State<bike_service> {
               onTap: _selectDob,
               child: IgnorePointer(
                 child: TextFormField(
-                  controller: _dobController,
+                  controller: _bikedateController,
                   obscureText: false,
                   decoration: InputDecoration(
                     border: OutlineInputBorder(
@@ -287,10 +297,10 @@ class _bike_serviceState extends State<bike_service> {
                         borderRadius: BorderRadius.circular(0)),
                     child: DropdownButton<String>(
                       // value: null,
-                      value: _selectedAc,
+                      value: _selectedoil,
                       onChanged: (value) {
                         setState(() {
-                          _selectedAc = value;
+                          _selectedoil = value;
                         });
                       },
                       hint: const Center(
@@ -508,7 +518,24 @@ class _bike_serviceState extends State<bike_service> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => mycart(),
+                            builder: (context) => mycart(
+                              carnum: "",
+                              carcompanyname: "",
+                              carmodelname: "",
+                              c_appointmentdate: "",
+                              c_wash_service: "",
+                              c_other_service: "",
+                              ac_service: "",
+                              paint_service: "",
+                              bikenum: _bikenum!.text,
+                              bikecompanyname: _bikecompname!.text,
+                              bikemodelname: _bikemodname!.text,
+                              b_appointmentdate: _bikedateController!.text,
+                              b_wash_service: _selectedwash!,
+                              oil_service: _selectedoil!,
+                              b_paint: _selectedPaint!,
+                              b_other_service: _selectedOther!,
+                            ),
                           ),
                         );
                       })),

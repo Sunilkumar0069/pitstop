@@ -21,7 +21,7 @@ class secondpage extends StatelessWidget {
           children: [
             Center(
               child: Text(
-                '\n\n\n\nSelect the type of services needed for you! ',
+                '\n\n\n\nSelect your services needed!',
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 30,

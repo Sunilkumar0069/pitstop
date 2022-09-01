@@ -103,7 +103,24 @@ class dashboard extends StatelessWidget {
             Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => mycart(),
+                  builder: (context) => mycart(
+                    carnum: "",
+                    carcompanyname: "",
+                    carmodelname: "",
+                    c_appointmentdate: "",
+                    c_wash_service: "",
+                    c_other_service: "",
+                    ac_service: "",
+                    paint_service: "",
+                    bikenum: "",
+                    bikecompanyname: "",
+                    bikemodelname: "",
+                    b_appointmentdate: "",
+                    b_wash_service: "",
+                    oil_service: "",
+                    b_paint: "",
+                    b_other_service: "",
+                  ),
                 ));
           },
         ),

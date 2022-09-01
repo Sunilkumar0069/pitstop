@@ -1,4 +1,4 @@
-package com.example.loginpage
+package com.PitStop
 
 import io.flutter.embedding.android.FlutterActivity
 
