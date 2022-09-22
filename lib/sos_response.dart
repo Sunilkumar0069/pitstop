@@ -24,8 +24,8 @@ class sos_response extends StatelessWidget {
           ),
         ),
         Center(
-          child: Image.network(
-            'https://previews.123rf.com/images/olegdudko/olegdudko1801/olegdudko180102033/93984157-woman-call-center-operator-on-dark-background.jpg',
+          child: Image.asset(
+            'assets/sosimg.png',
             width: 500,
             height: 400,
           ),

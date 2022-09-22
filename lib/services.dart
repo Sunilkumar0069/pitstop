@@ -30,8 +30,8 @@ class secondpage extends StatelessWidget {
               ),
             ),
             Center(
-              child: Image.network(
-                'https://img.freepik.com/premium-vector/cheerful-team-auto-mechanics-against-background-car-service-auto-repair-station-workers_165429-1151.jpg?w=2000',
+              child: Image.asset(
+                'assets/serviceimg.jpeg',
                 width: 800,
                 height: 300,
               ),
